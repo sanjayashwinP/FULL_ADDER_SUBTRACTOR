@@ -67,7 +67,7 @@ FULL SUBTRACTOR 1.Follow the same steps as for the full adder.
 
 /* Program to design a half subtractor and full subtractor circuit and verify its truth table in quartus using Verilog programming. Developed by: RegisterNumber:
 FULL ADDER:
-
+```
 module fulladd_top(a,b,cin,sum,carry);
 input a,b,cin;
 output sum,carry;
@@ -79,17 +79,17 @@ and(w3,b,cin);
 and(w4,cin,a);
 or(carry,w2,w3,w4);
 endmodule
-
+```
 
 FULL SUBTRACTOR:
-
+```
 module fullsub_top(a,b,Bin,BO,DIFF);
 input a,b,Bin;
 output BO,DIFF;
 assign DIFF = a ^ b ^ Bin;
 assign BO = (a & b) | ((a ^ b) & Bin);
 endmodule
-
+```
 **RTL Schematic**
 ![image](https://github.com/sanjayashwinP/FULL_ADDER_SUBTRACTOR/assets/147473265/a8c93bef-8ae6-41e2-a298-48236aff023f)
 
